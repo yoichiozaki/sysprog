@@ -13,16 +13,6 @@
 #include <ctype.h>
 #include <string.h>
 #include "builtins.h"
-// static struct builtin* lookup(char *target_name);
-// static int builtin_cd(int argc, char *argv[]);
-// static int builtin_pwd(int argc, char *argv[]);
-// static int builtin_exit(int argc, char *argv[]);
-
-// struct builtin represents a builtin function of mysh.
-// struct builtin {
-//     char *name; 						// its name, which is used as search index.
-//     int (*f)(int argc, char *argv[]);	// its content.
-// };
 
 struct builtin builtins[] = {
     {"cd",      builtin_cd},	// cd stands for Change Directory.

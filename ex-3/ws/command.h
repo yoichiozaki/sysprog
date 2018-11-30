@@ -13,10 +13,6 @@ struct command {
 struct command* parse(char *p);
 void free_command(struct command *cmd);
 int execute_commands(struct command *head);
-// extern void execute_pipeline(struct command *head);
-// extern void redirect_to(char *path);
 void print_commands(struct command *head);
-// extern int wait_pipeline(struct command *head);
-// struct command* get_pipeline_tail(struct command *head);
 
 #endif

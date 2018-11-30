@@ -16,26 +16,6 @@
 static void welcome();
 static void prompt();
 
-// // command
-// extern struct command* parse(char *p);
-// extern void free_command(struct command *cmd);
-// extern int execute_commands(struct command *head);
-// extern void execute_pipeline(struct command *head);
-// extern void redirect_to(char *path);
-// extern void print_commands(struct command *head);
-// extern int wait_pipeline(struct command *head);
-// extern struct command* get_pipeline_tail(struct command *head);
-// 
-// // builtins
-// extern struct builtin* lookup(char *target_name);
-// extern int builtin_cd(int argc, char *argv[]);
-// extern int builtin_pwd(int argc, char *argv[]);
-// extern int builtin_exit(int argc, char *argv[]);
-// 
-// // utils
-// extern void* my_malloc(size_t sz);
-// extern void* my_realloc(void *ptr, size_t sz);
-
 static char *program_name = "mysh";
 
 int

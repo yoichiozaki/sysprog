@@ -13,8 +13,6 @@
 #include <ctype.h>
 #include <string.h>
 #include "utils.h"
-// static void* my_malloc(size_t sz);
-// static void* my_realloc(void *ptr, size_t sz);
 
 // my_malloc() allocates size bytes on memory, initializes it and returns its pointer.
 void*

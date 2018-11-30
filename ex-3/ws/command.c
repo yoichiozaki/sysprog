@@ -15,25 +15,12 @@
 #include "command.h"
 #include "builtins.h"
 #include "utils.h"
-// struct command represents inputed command instance.
-// struct command {
-//     int argc;				// the number of arguments
-//     char **argv;			// the values of arguments
-//     int capacity; 			// capacitycity of this command
-//     int status; 			// command status
-//     int pid; 				// command pid
-//     struct command *next; 	// If piped, store a pointer to the next command
-// };
 
 #define INIT_CAPACITY 8
 #define PID_BUILTIN -2
 
-// static struct *command parse(char *p);
-// static void free_command(struct command *cmd);
-// static int execute_commands(struct command *head);
 static void execute_pipeline(struct command *head);
 static void redirect_to(char *path);
-// static void print_commands(struct command *head);
 static int wait_pipeline(struct command *head);
 static struct command* get_pipeline_tail(struct command *head);
 
