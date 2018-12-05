@@ -1,4 +1,4 @@
-// 61604239
+// 61604239 ozaki yoichi
 
 #include <stdio.h>
 #include <stdlib.h>
